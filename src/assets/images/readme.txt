@@ -1,0 +1,1 @@
+images should be exported as PNG

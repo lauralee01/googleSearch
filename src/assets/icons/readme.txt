@@ -1,0 +1,1 @@
+icons should be exported as SVG
