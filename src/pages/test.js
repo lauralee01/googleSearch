@@ -5,8 +5,7 @@ export default class Test extends Component {
   render() {
     return (
       <TestStyle>
-        <h1>Swipe React Project Init</h1>
-        <p>Last Updated Date - Friday 25th October 2019</p>
+        <h1>Google Search</h1>
       </TestStyle>
     )
   }
