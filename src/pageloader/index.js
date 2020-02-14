@@ -9,6 +9,6 @@ export const Test = loadable(() => import("../pages/test"),{
 export const HomePage = loadable(() => import("../pages/google/index"),{
     LoadingComponent: Preloader
 });
-export const SearchResults = loadable(() => import("../pages/google/SearchResults"),{
+export const SearchResults = loadable(() => import("../pages/google/searchResults/index"),{
     LoadingComponent: Preloader
 });

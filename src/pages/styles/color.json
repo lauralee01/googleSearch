@@ -11,7 +11,7 @@
     "orangered": "#ff4300",
     "lightbrown":"#fd8a25",
     "light":"#626262",
-    "light":"#F2F2F2",
+    "lighten":"#F2F2F2",
     "lightgreen": "#EBF8F0",
     "lightpurple": "#EDF2FF",
     "lightblue": "#FBFEFF",
@@ -19,6 +19,8 @@
     "lightred":"#FF585B",
     "lilblack": "#222222",
     "lightash": "#515151",
-    "offblack":"#0A0A0A"
+    "offblack":"#0A0A0A",
+    "deepblue": "#1A0DAB",
+    "offgrey":"#3C4043"
   }
   

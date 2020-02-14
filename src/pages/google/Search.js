@@ -2,8 +2,11 @@ import React, {Component} from 'react';
 import * as Style from '../styles/index';
 import { searchData }  from './searchdata';
 import SearchSuggestions from './SearchSuggestions';
+import { getSearchData, getSearchQuery } from '../../store/actions/api';
+import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-export default class Search extends Component {
+class Search extends Component {
 state = {
     searchTitle: '',
     searchDetails: [],
@@ -22,9 +25,17 @@ handleChange = e => {
         searchData: filteredData,
         showResults: true
     })
+    this.props.getSearchData(this.state.searchData);
+}
+
+handleSearchData = (obj) => {
+    console.log(obj)
+    this.props.getSearchQuery(obj, this.props.history)
 }
   render() {
       console.log(this.state.searchData)
+      console.log(this.props.search)
+      console.log(this.props.searchQuery)
      return (
        <Style.Search>
             <img src={require("../../assets/images/google.png")} alt="google" />
@@ -54,7 +65,7 @@ handleChange = e => {
                       }
                 />
                 {
-                this.state.showResults ?  <SearchSuggestions results={this.state.searchData} /> : null
+                this.state.showResults ?  <SearchSuggestions results={this.state.searchData } showData={this.handleSearchData} /> : null
                 }
             </Style.InputDiv>
             <Style.SearchButton>
@@ -64,6 +75,15 @@ handleChange = e => {
        </Style.Search>
      );
   }
- 
 };
+const mapStateToProps = state => ({
+   search: state.search.searchData,
+   searchQuery: state.search.searchQuery
+});
 
+export default withRouter(
+connect(mapStateToProps, {
+   getSearchData,
+   getSearchQuery
+})(Search)
+);
