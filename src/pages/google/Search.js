@@ -35,7 +35,7 @@ handleSearchData = (obj) => {
   render() {
      return (
        <Style.Search>
-            <img src={require("../../assets/images/google.png")} alt="google" />
+            <img src={require("../../assets/images/googlemain.png")} alt="google" />
             <Style.InputDiv style={
                 this.state.showResults? {
                     width: '582px',
@@ -69,6 +69,14 @@ handleSearchData = (obj) => {
                 <button>Google</button>
                 <button>search to find me</button>
             </Style.SearchButton>
+            <Style.Flex>
+                <p className="google">Google offered in:</p>
+                <p>English</p>
+                <p>Hausa</p>
+                <p>writing</p>
+                <p>Yoruba</p>
+                <p>Nigerian Pidgin</p>
+            </Style.Flex>
        </Style.Search>
      );
   }

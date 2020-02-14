@@ -13,14 +13,14 @@ export const HomePage = styled.div`
 `;
 export const Search = styled.div`
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -55%);
   text-align: center;
 
   img {
     width: 272px;
-    margin-bottom: -5rem;
+    margin-bottom: 1rem;
     text-align: center;
   }
   
@@ -40,6 +40,22 @@ export const InputDiv = styled.div`
       font-size: 14px;
       color: #5F6368;
   }
+  .searchinput {
+    height: 32px;
+    margin-left: -5.5rem;
+  }
+`;
+export const FlexSearch = styled.div`
+display: flex;
+align-items: center;
+box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.2);
+margin: -1rem;
+padding: 1rem;
+margin-bottom: 2rem;
+img {
+  width: 86px;
+  height: 28px;
+}
 `;
 export const SearchButton = styled.div`
  text-align: center;
@@ -96,4 +112,61 @@ export const Data = styled.span`
   font-family: arial,sans-serif;
   padding: 4px 0px 0px
   padding-right: 0.5rem;
+`;
+export const Footer = styled.div`
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: ${Colors.lighten};
+  color: #5F6368;;
+  font-size: 14px;
+  font-family: arial,sans-serif;
+  padding: 1rem;
+`;
+export const MiniFooter = styled.div`
+position: absolute;
+bottom: 3rem;
+left: 0;
+width: 100%
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: ${Colors.lighten};
+  color: #5F6368;;
+  font-size: 14px;
+  font-family: arial,sans-serif;
+  padding: 1rem;
+  border: 1px solid #e4e4e4;
+`;
+export const FirstDiv = styled.div`
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+`;
+export const SecondDiv = styled.div`
+  width: 320px;
+  display: flex;
+  justify-content: space-around;
+`;
+export const Flex = styled.div`
+margin: 1rem auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 500px;
+  color: ${Colors.offblack};
+  font-size: 14px;
+  font-family: arial,sans-serif;
+  padding: 1rem;
+
+  p {
+    color: ${Colors.deepblue};
+  }
+  .google {
+    color: ${Colors.offblack};
+  }
 `;

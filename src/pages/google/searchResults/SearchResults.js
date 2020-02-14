@@ -35,7 +35,9 @@ handleSearchData = (obj) => {
     const searchQuery = this.props.searchQuery
      return (
        <Styles.HomePage>
-          <Styles.InputDiv className="input" style={
+         <Styles.FlexSearch>
+         <img src={require("../../../assets/images/googlemain.png")} alt="google" />
+         <Styles.InputDiv className="input" style={
                 this.state.showResults ? {
                     width: '582px',
                     borderRadius: '30px',
@@ -49,6 +51,7 @@ handleSearchData = (obj) => {
             }>
                 <input 
                     type="search" 
+                    className="searchinput"
                     name="searchTitle" 
                     onChange={this.handleChange} 
                     style={
@@ -64,6 +67,7 @@ handleSearchData = (obj) => {
                 this.state.showResults ?  <SearchSuggestions results={this.state.searchData} showData={this.handleSearchData} /> : null
                 }
             </Styles.InputDiv>
+         </Styles.FlexSearch>
        {searchQuery ? <Styles.SearchResults>
         <Styles.Company>{searchQuery.companyName} | </Styles.Company>
         <Styles.Company>{searchQuery.jobTitle}</Styles.Company>
