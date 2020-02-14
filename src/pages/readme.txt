@@ -1,1 +1,0 @@
-where all web pages should be

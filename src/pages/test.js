@@ -5,7 +5,7 @@ export default class Test extends Component {
   render() {
     return (
       <TestStyle>
-        <h1>Google Search</h1>
+        <h1>GOOGLE SEARCH</h1>
       </TestStyle>
     )
   }

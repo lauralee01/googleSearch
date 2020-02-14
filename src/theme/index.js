@@ -5,8 +5,8 @@ import * as Dimensions from "./dimension.json";
 export const TestStyle = styled.div`
     width: 100%;
     height: 100vh;
-    background-color: ${Colors.black};
+    background-color: ${Colors.white};
     h1,p {
-        color: ${Colors.white}
+        color: ${Colors.black}
     }
 `
