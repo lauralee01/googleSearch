@@ -33,9 +33,6 @@ handleSearchData = (obj) => {
     this.props.getSearchQuery(obj, this.props.history)
 }
   render() {
-      console.log(this.state.searchData)
-      console.log(this.props.search)
-      console.log(this.props.searchQuery)
      return (
        <Style.Search>
             <img src={require("../../assets/images/google.png")} alt="google" />

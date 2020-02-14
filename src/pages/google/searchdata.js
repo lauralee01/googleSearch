@@ -167,5 +167,31 @@ export const searchData = [
         location: 'Lagos, Nigeria',
         time: '6 days ago',
         duration: '3 months'
+      },
+      {
+        id: '14',
+        companyName: 'Exxon Mobil',
+        jobTitle: 'Frontend Developer - Intermediate',
+        job: 'Frontend Developer',
+        level: 'Intermediate',
+        price: 'N150,000.00',
+        details:
+          'We need a Frontend developer to design and prototype our website.We need a Frontend developer to design and prototype our website.We need a Frontend developer to design and prototype our website',
+        location: 'Lagos, Nigeria',
+        time: '6 days ago',
+        duration: '3 months'
+      },
+      {
+        id: '15',
+        companyName: 'Exxon Mobil',
+        jobTitle: 'Frontend Developer - Intermediate',
+        job: 'Frontend Developer',
+        level: 'Intermediate',
+        price: 'N150,000.00',
+        details:
+          'We need a Frontend developer to design and prototype our website.We need a Frontend developer to design and prototype our website.We need a Frontend developer to design and prototype our website',
+        location: 'Lagos, Nigeria',
+        time: '6 days ago',
+        duration: '3 months'
       }
   ];

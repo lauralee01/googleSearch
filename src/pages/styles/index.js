@@ -6,6 +6,10 @@ export const HomePage = styled.div`
   width: 100%;
   height: 100%;
   background-color: ${Colors.white};
+  .input {
+    margin-left: 9rem;
+  }
+  
 `;
 export const Search = styled.div`
   position: absolute;
