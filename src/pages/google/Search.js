@@ -47,6 +47,7 @@ handleSearchData = (obj) => {
                     opacity: '2'
                 }: null
             }>
+               
                 <input 
                     type="search" 
                     name="searchTitle" 

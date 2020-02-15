@@ -9,12 +9,11 @@ class SearchResults extends Component {
   state = {
     searchTitle: '',
     searchDetails: [],
-    showResults: false,
-}
+    showResults: false
+  }
 
   handleChange = e => { 
     e.preventDefault()
-    console.log(e.target.value)
     const searchTitle = e.target.value
     const filteredData = this.props.search.filter(obj => {
         return obj.companyName.toLowerCase().includes(searchTitle.toLowerCase());
@@ -26,7 +25,6 @@ class SearchResults extends Component {
     this.props.getSearchData(this.state.searchDetails);
 }
 handleSearchData = (obj) => {
-  console.log(obj)
   this.props.getSearchQuery(obj, this.props.history)
 }
   render() {
@@ -35,7 +33,7 @@ handleSearchData = (obj) => {
        <Styles.HomePage>
          <Styles.FlexSearch>
          <img src={require("../../../assets/images/googlemain.png")} alt="google" />
-         <Styles.InputDiv className="input" style={
+         <Styles.InputDiv className="input" style = {
                 this.state.showResults ? {
                     width: '582px',
                     borderRadius: '30px',
@@ -45,7 +43,7 @@ handleSearchData = (obj) => {
                     position: 'relative',
                     zIndex: '500',
                     opacity: '2'
-                }: null
+                } : null
             }>
                 <input 
                     type="search" 
@@ -56,7 +54,8 @@ handleSearchData = (obj) => {
                         this.state.showResults
                           ? {
                               borderRadius: 'none',
-                              boxShadow: 'none'
+                              boxShadow: 'none',
+                              
                             }
                           : null
                       }
@@ -73,7 +72,7 @@ handleSearchData = (obj) => {
        <Styles.Data>{searchQuery.location} </Styles.Data>
        <Styles.Data>{searchQuery.price} </Styles.Data>
        <Styles.Data>{searchQuery.duration}</Styles.Data>
-       </Styles.SearchResults>: <div>No Search Results</div>
+       </Styles.SearchResults> : <div>No Search Results</div>
        }
       
        </Styles.HomePage>
@@ -92,4 +91,3 @@ connect(mapStateToProps, {
   getSearchData
 })(SearchResults)
 );
-

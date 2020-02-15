@@ -7,7 +7,7 @@ export const HomePage = styled.div`
   height: 100%;
   background-color: ${Colors.white};
   .input {
-    margin-left: 9rem;
+    margin-left: 3.5rem;
   }
   
 `;
@@ -39,10 +39,20 @@ export const InputDiv = styled.div`
       font-family: arial,sans-serif;
       font-size: 14px;
       color: #5F6368;
+      position: relative;
   }
   .searchinput {
     height: 32px;
-    margin-left: -5.5rem;
+    // margin-left: -5.5rem;
+  }
+  .search {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 900;
+    left: 0.5rem;
+    transform: translate(2px, 10px);
+    margin-right: 2rem;
   }
 `;
 export const FlexSearch = styled.div`
