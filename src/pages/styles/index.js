@@ -89,6 +89,14 @@ export const Key = styled.li`
  font-size: 14px;
  color: #5F6368;
  cursor: pointer;
+ 
+  &:hover {
+    background-color: #ebf8ff;
+  }
+  &:active {
+    background-color: #ebf8ff;
+  }
+ }
 `;
 export const SearchResults = styled.div`
  margin-left: 9rem;
