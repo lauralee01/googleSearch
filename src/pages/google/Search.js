@@ -29,7 +29,6 @@ handleChange = e => {
 }
 
 handleSearchData = (obj) => {
-    console.log(obj)
     this.props.getSearchQuery(obj, this.props.history)
 }
   render() {

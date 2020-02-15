@@ -30,8 +30,6 @@ handleSearchData = (obj) => {
   this.props.getSearchQuery(obj, this.props.history)
 }
   render() {
-    console.log(this.props.searchQuery)
-    console.log(this.props.search)
     const searchQuery = this.props.searchQuery
      return (
        <Styles.HomePage>
